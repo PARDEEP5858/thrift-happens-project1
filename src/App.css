@@ -1,0 +1,83 @@
+
+/* Store Header */
+.app-header {
+  background-color: #f4eee7;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+}
+
+.store-logo {
+  width: 180px !important;
+  height: auto !important;
+  max-width: 100%;
+  display: block;
+  object-fit: contain;
+  margin: 0 auto 10px;
+}
+
+.app-header h1 {
+  margin: 10px 0;
+}
+
+.app-header p {
+  margin: 0;
+}
+
+/* Product Collection */
+.ItemsContainer {
+  padding: 20px;
+}
+
+.ItemsContainer > h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.ItemsContainer {
+  display: block;
+}
+
+.ItemCard img {
+  width: 150px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Products in a grid */
+.items-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  padding: 20px;
+}
+
+/* Individual product cards */
+.ItemCard {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  background-color: white;
+}
+
+/* Product images */
+.ItemCard img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+}
+
+/* Smaller screens */
+@media (max-width: 800px) {
+  .items-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .items-grid {
+    grid-template-columns: 1fr;
+  }
+}
